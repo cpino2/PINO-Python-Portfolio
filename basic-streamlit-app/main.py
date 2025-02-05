@@ -2,7 +2,7 @@
 import streamlit as st
 
 # Display a simple text message
-st.write("Hello, world!")
+st.write("Hello, world")
 
 # Display a large title on the app
 st.title("This is my first Streamlit app.")
