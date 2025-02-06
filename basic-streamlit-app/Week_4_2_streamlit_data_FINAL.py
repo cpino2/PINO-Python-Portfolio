@@ -57,6 +57,13 @@ filtered_df = df[df["City"] == city]
 st.write(f"People in {city}:")
 st.dataframe(filtered_df)
 
+#st.slider("Choose a maximum salary,"
+         # min_value = filtered_df["Salary"].min(),
+        #  max_value = filtered_df["Salary"].max())
+
+#st.write(f"Salaries under {salary}")
+#st.dataframe(filtered_df[filtered_df['Salary'] <= salary])
+
 # ================================
 # Summary of Learning Progression:
 # 1️⃣ Displaying a basic DataFrame in Streamlit.
