@@ -26,10 +26,10 @@ st.dataframe(df)
 
 # Using a selectbox to allow users to filter data by city
 # Students learn how to use widgets in Streamlit for interactivity
-city = st.selectbox("Select a city", df["City"].unique())
+city = st.selectbox("Select a city", df["City"].unique()) #label select box with string in quotations, then, put in the options list you want to give your audience. unique returns unique values in the column
 
 # Filtering the DataFrame based on user selection
-filtered_df = df[df["City"] == city]
+filtered_df = df[df["City"] == city] #select entire dataframe and specify using city variable using ==. tells it that when dfcity = select box city, return that dataframe. this lets our dataframe update with our select box
 
 # Display the filtered results
 st.write(f"People in {city}:")
