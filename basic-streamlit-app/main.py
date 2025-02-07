@@ -42,11 +42,11 @@ st.subheader("Now that you've had a minute to ground yourself, let's begin looki
 
 # Create a simple Pandas DataFrame with sample data
 df = pd.DataFrame({
-    'Island': ['Biscoe', 'Dream', 'Torgersen'],  # column listing the islands of these specific penguins in the order of id 20, 31, 130
-    'ID': [20, 31, 131],
-    'Species': ['Adelie', 'Adelie', 'Adelie'],
-    'Flipper Length (mm)': ['174', '178', '197'],  # Column of ID in respective order of each penguin listed
-    'Gender': ['Female', 'Male', 'Male']  # Column of genders of each penguin listed
+    'Island': ['Biscoe', 'Dream', 'Torgersen', 'Biscoe', 'Dream'],  # column listing the islands of these specific penguins in the order of id 20, 31, 130
+    'ID': [20, 31, 131, 170, 305],
+    'Species': ['Adelie', 'Adelie', 'Adelie', 'Gentoo', 'Chinstrap'],
+    'Flipper Length (mm)': ['174', '178', '197', '209', '205'],  # Column of ID in respective order of each penguin listed
+    'Gender': ['Female', 'Male', 'Male', 'Female', 'Male']  # Column of genders of each penguin listed
 })
 
 # Display a descriptive message
@@ -79,7 +79,7 @@ st.dataframe(filtered_df)  # Show the filtered table
 # This teaches students how to work with external data in Streamlit
 df = pd.read_csv("data\penguins.csv")  # Ensure the "data" folder exists with the CSV file
 # Display the imported dataset
-st.write("Here's the dataset loaded from a CSV file:")
+st.write("Below is the (large) dataset loaded from a CSV file! Feel free to scroll through and admire its beauty!")
 st.dataframe(df) #this lets you have access to the dataframe inside of your data folder
 
 # ------------------------
