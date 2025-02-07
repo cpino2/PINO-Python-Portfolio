@@ -1,90 +1,46 @@
-# Import the Streamlit library
-import streamlit as st
+import streamlit as st #importing streamlit library
 
-# Display a simple text message
-st.write("Hi there, friend!")
+st.write("Hi there, friend!") #displaying initial message
 
-# Display a large title on the app
-st.title("Flippers in the Air like They Just Don't Care!")
+st.title("Flippers in the Air like They Just Don't Care!")#displaying large title on the app screen
 
-# ------------------------
-# INTERACTIVE BUTTON
-# ------------------------
-
-# Create a button that users can click.
-# If the button is clicked, the message changes.
-if st.button("What is a penguin's favorite type of lettuce? Click here to find out!"):
-    st.write("Iceberg!🎉I hope I made you laugh!🚀")
+if st.button("What is a penguin's favorite type of lettuce? Click here to find out!"):#creating a button for users to interact with and has a message that changes when the button is clicked by the users
+    st.write("Iceberg!🎉I hope I made you laugh!🚀")#this will appear when the button is clicked on by a user
 else:
-    st.write("Want to laugh? Click the button...")
+    st.write("Want to laugh? Click the button...")#if the button is not clicked, this phrase will appear until the button is clicked
 
-# ------------------------
-# COLOR PICKER WIDGET
-# ------------------------
+color = st.color_picker("Pick the color that most resonates with your current mood:")#this creates a color picker that is interactive for users so they can select a color
 
-# Creates an interactive color picker where users can choose a color.
-# The selected color is stored in the variable 'color'.
-color = st.color_picker("Pick the color that most resonates with your current mood:")
+st.write(f"Take a second to think about how this color reflects your current state:)")#this will be displayed under the chosen color to enforce users to consider the relationship between their selected color and their current state of being/mood
 
-# Display the chosen color value
-st.write(f"Take a second to think about how this color reflects your current state:)")
+import streamlit as st#adding data to streamlit
+import pandas as pd#importing pandas for handling data
 
-# ------------------------
-# ADDING DATA TO STREAMLIT
-# ------------------------
+st.subheader("Now that you've had a minute to ground yourself, let's begin looking at some fascinating penguin data!") #this will be displayed as a title prior to the display of the data table
 
-# Import pandas for handling tabular data
-import streamlit as st
-import pandas as pd
-
-# Display a section title
-st.subheader("Now that you've had a minute to ground yourself, let's begin looking at some fascinating penguin data!")
-
-# Create a simple Pandas DataFrame with sample data
-df = pd.DataFrame({
+df = pd.DataFrame({ #this is the code used to create pandas dataframe with some of the data from the large csv file
     'Island': ['Biscoe', 'Dream', 'Torgersen', 'Biscoe', 'Dream'],  # column listing the islands of these specific penguins in the order of id 20, 31, 130
-    'ID': [20, 31, 131, 170, 305],
-    'Species': ['Adelie', 'Adelie', 'Adelie', 'Gentoo', 'Chinstrap'],
+    'ID': [20, 31, 131, 170, 305], #column listing penguins respective id numbers
+    'Species': ['Adelie', 'Adelie', 'Adelie', 'Gentoo', 'Chinstrap'], #column listing species of each penguin listed
     'Flipper Length (mm)': ['174', '178', '197', '209', '205'],  # Column of ID in respective order of each penguin listed
     'Gender': ['Female', 'Male', 'Male', 'Female', 'Male']  # Column of genders of each penguin listed
 })
 
-# Display a descriptive message
-st.write("Here's a table categorizing some penguins in the dataset by their ID number, gender, and the respecive island they call home:")
+st.write("Here's a table categorizing some penguins in the dataset by the island on which they live, their ID number, their species, their flipper length in millimeters, and their gender:)") #this is a message that will appear describing the data shown in the datatable
 
-# Display the dataframe in an interactive table.
-# Users can scroll and sort the data within the table.
-st.dataframe(df)
+st.dataframe(df) #this allows for the dataframe to be displayed in an interactive table from which users can scroll and sort the data how they wish
 
-# ------------------------
-# INTERACTIVE DATA FILTERING
-# ------------------------
+island = st.selectbox("Select an island", df["Island"].unique())#this creates a dropdown for users to filter the data by island, allowing the user to select an island from the identified 'island' column in the data table above
 
-# Create a dropdown (selectbox) for filtering the DataFrame by city.
-# The user selects a city from the unique values in the "City" column.
-island = st.selectbox("Select an island", df["Island"].unique())
+filtered_df = df[df["Island"] == island] #this creates a filtered dataframe based on the island the user selected and only inlcludes the data from the datatable that corresponds with the island selected by the user
 
-# Create a filtered DataFrame that only includes rows matching the selected city.
-filtered_df = df[df["Island"] == island]
+st.write(f"Penguins in {island}:")#this message will appear to describe the penguins in the particular island selected by the user
+st.dataframe(filtered_df)  # this will allow for the filtered table based on the island selection made by the user to be shown and viewable to the user
 
-# Display the filtered results with an appropriate heading.
-st.write(f"Penguins in {island}:")
-st.dataframe(filtered_df)  # Show the filtered table
+df = pd.read_csv("data\penguins.csv")  # this code imports the corresponding penguin data using a relative path so that a CSV file can be loaded by working with external data in Streamlit and it displays the imported dataset for users to view
+st.write("Below is the (large) dataset loaded from a CSV file! Feel free to scroll through and admire its beauty!")#this message will appear on top of the dataset explaining to the users what they are viewing
+st.dataframe(df) #this provides access to the dataframe inside the appropriate data folder
 
-# ================================
-# Step 3: Importing Data Using a Relative Path
-# ================================
-
-# Now, instead of creating a DataFrame manually, we load a CSV file
-# This teaches students how to work with external data in Streamlit
-df = pd.read_csv("data\penguins.csv")  # Ensure the "data" folder exists with the CSV file
-# Display the imported dataset
-st.write("Below is the (large) dataset loaded from a CSV file! Feel free to scroll through and admire its beauty!")
-st.dataframe(df) #this lets you have access to the dataframe inside of your data folder
-
-# ------------------------
-# NEXT STEPS & CHALLENGE
-# ------------------------
 
 # Play around with more Streamlit widgets or elements by checking the documentation:
 # https://docs.streamlit.io/develop/api-reference
