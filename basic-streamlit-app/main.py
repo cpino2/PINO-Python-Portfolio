@@ -13,10 +13,10 @@ st.title("I am having so much fun creating my first Streamlit app!")
 
 # Create a button that users can click.
 # If the button is clicked, the message changes.
-if st.button("Click me please!"):
-    st.write("🎉 You clicked the button! Nice work! 🚀")
+if st.button("What is a penguin's favorite type of lettuce? Click here to find out!"):
+    st.write("Iceberg!🎉I hope I made you laugh!🚀")
 else:
-    st.write("Click the button to see what happens...")
+    st.write("Click the button to get a little laugh...")
 
 # ------------------------
 # COLOR PICKER WIDGET
