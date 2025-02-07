@@ -5,7 +5,7 @@ import streamlit as st
 st.write("Hi there, friend!")
 
 # Display a large title on the app
-st.title("I am having so much fun creating my first Streamlit app!")
+st.title("Flippers in the Air like They Just Don't Care!")
 
 # ------------------------
 # INTERACTIVE BUTTON
@@ -16,7 +16,7 @@ st.title("I am having so much fun creating my first Streamlit app!")
 if st.button("What is a penguin's favorite type of lettuce? Click here to find out!"):
     st.write("Iceberg!🎉I hope I made you laugh!🚀")
 else:
-    st.write("Click the button to get a little laugh...")
+    st.write("Want to laugh? Click the button...")
 
 # ------------------------
 # COLOR PICKER WIDGET
