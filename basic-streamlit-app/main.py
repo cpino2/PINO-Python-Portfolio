@@ -27,7 +27,7 @@ else:
 color = st.color_picker("Pick the color that most resonates with your current mood:")
 
 # Display the chosen color value
-st.write(f"You picked: {color}. Take a second to think about how this color reflects your current state:)")
+st.write(f"Take a second to think about how this color reflects your current state:)")
 
 # ------------------------
 # ADDING DATA TO STREAMLIT
@@ -62,14 +62,25 @@ st.dataframe(df)
 
 # Create a dropdown (selectbox) for filtering the DataFrame by city.
 # The user selects a city from the unique values in the "City" column.
-city = st.selectbox("Select a city", df["City"].unique())
+island = st.selectbox("Select an island", df["Island"].unique())
 
 # Create a filtered DataFrame that only includes rows matching the selected city.
-filtered_df = df[df["City"] == city]
+filtered_df = df[df["Island"] == island]
 
 # Display the filtered results with an appropriate heading.
-st.write(f"People in {city}:")
+st.write(f"Penguins in {island}:")
 st.dataframe(filtered_df)  # Show the filtered table
+
+# ================================
+# Step 3: Importing Data Using a Relative Path
+# ================================
+
+# Now, instead of creating a DataFrame manually, we load a CSV file
+# This teaches students how to work with external data in Streamlit
+df = pd.read_csv("data\penguins.csv")  # Ensure the "data" folder exists with the CSV file
+# Display the imported dataset
+st.write("Here's the dataset loaded from a CSV file:")
+st.dataframe(df) #this lets you have access to the dataframe inside of your data folder
 
 # ------------------------
 # NEXT STEPS & CHALLENGE
