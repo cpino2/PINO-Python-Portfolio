@@ -2,10 +2,10 @@
 import streamlit as st
 
 # Display a simple text message
-st.write("Hello, world")
+st.write("Hi there, friend!")
 
 # Display a large title on the app
-st.title("This is my first Streamlit app.")
+st.title("I am having so much fun creating my first Streamlit app!")
 
 # ------------------------
 # INTERACTIVE BUTTON
