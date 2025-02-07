@@ -34,16 +34,17 @@ st.write(f"You picked: {color}")
 # ------------------------
 
 # Import pandas for handling tabular data
+import streamlit as st
 import pandas as pd
 
 # Display a section title
-st.subheader("Now, let's look at some data!")
+st.subheader("Now let's take a look at some penguin data!")
 
 # Create a simple Pandas DataFrame with sample data
 df = pd.DataFrame({
-    'Name': ['Alice', 'Bob', 'Charlie', 'David'],  # Column of names
-    'Age': [25, 30, 35, 40],  # Column of ages
-    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']  # Column of cities
+    'Island': ['Biscoe', 'Dream', 'Torgersen'],  # column listing the islands of these specific penguins in the order of id 20, 31, 130
+    'ID': [20, 31, 131],  # Column of ID in respective order of each penguin listed
+    'Gender': ['Female', 'Male', 'Male']  # Column of genders of each penguin listed
 })
 
 # Display a descriptive message
