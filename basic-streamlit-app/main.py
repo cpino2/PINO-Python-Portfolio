@@ -24,7 +24,7 @@ else:
 
 # Creates an interactive color picker where users can choose a color.
 # The selected color is stored in the variable 'color'.
-color = st.color_picker("Pick a color", "#00f900")
+color = st.color_picker("Pick a color")
 
 # Display the chosen color value
 st.write(f"You picked: {color}")
