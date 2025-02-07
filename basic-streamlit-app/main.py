@@ -24,10 +24,10 @@ else:
 
 # Creates an interactive color picker where users can choose a color.
 # The selected color is stored in the variable 'color'.
-color = st.color_picker("Pick a color")
+color = st.color_picker("Pick the color that most resonates with your current mood:")
 
 # Display the chosen color value
-st.write(f"You picked: {color}")
+st.write(f"You picked: {color}. Take a second to think about how this color reflects your current state:)")
 
 # ------------------------
 # ADDING DATA TO STREAMLIT
@@ -38,17 +38,19 @@ import streamlit as st
 import pandas as pd
 
 # Display a section title
-st.subheader("Now let's take a look at some penguin data!")
+st.subheader("Now that you've had a minute to ground yourself, let's begin looking at some fascinating penguin data!")
 
 # Create a simple Pandas DataFrame with sample data
 df = pd.DataFrame({
     'Island': ['Biscoe', 'Dream', 'Torgersen'],  # column listing the islands of these specific penguins in the order of id 20, 31, 130
-    'ID': [20, 31, 131],  # Column of ID in respective order of each penguin listed
+    'ID': [20, 31, 131],
+    'Species': ['Adelie', 'Adelie', 'Adelie'],
+    'Flipper Length (mm)': ['174', '178', '197'],  # Column of ID in respective order of each penguin listed
     'Gender': ['Female', 'Male', 'Male']  # Column of genders of each penguin listed
 })
 
 # Display a descriptive message
-st.write("Here's a simple table:")
+st.write("Here's a table categorizing some penguins in the dataset by their ID number, gender, and the respecive island they call home:")
 
 # Display the dataframe in an interactive table.
 # Users can scroll and sort the data within the table.
