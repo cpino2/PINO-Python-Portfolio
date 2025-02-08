@@ -1,6 +1,6 @@
 import streamlit as st #importing streamlit library
 
-st.write("Hi there, friend!") #displaying initial message
+st.markdown("Hi there, friend!") #displaying initial message
 
 st.title("Flippers in the Air like They Just Don't Care!")#displaying large title on the app screen
 
