@@ -4,7 +4,7 @@ st.write("Hi there, friend!") #displaying initial message
 
 st.title("Flippers in the Air like They Just Don't Care!")#displaying large title on the app screen
 
-st.write("This is an app I created to foster self-awareness by way of exploration and adventure! It invites users to evalute their feelings and mental state prior to engaging with an interactive data analysis about penguins. Users can direct their analysis of this dataset based on their interest and preferences in terms of selections, highlighting the uniqueness of the interaction embedded into this app!") #displaying initial message
+st.write("This is an app I created to foster self-awareness by way of exploration and adventure! It invites users to evalute their feelings and mental state prior to engaging with an interactive data analysis about penguins. Users can direct their analysis of this dataset based on their interests and preferences in terms of selections, highlighting the uniqueness of the personal interactions embedded into this app!") #displaying initial message
 
 if st.button("What is a penguin's favorite type of lettuce? Click here to find out!"):#creating a button for users to interact with and has a message that changes when the button is clicked by the users
     st.write("Iceberg!🎉I hope I made you laugh!🚀")#this will appear when the button is clicked on by a user
