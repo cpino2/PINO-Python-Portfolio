@@ -3,6 +3,7 @@ import streamlit as st #importing streamlit library
 st.markdown("Hi there, friend!") #displaying initial message
 
 st.title("Flippers in the Air like They Just Don't Care!")#displaying large title on the app screen
+st.image('flipperintheairpenguinpng.avif')#adding penguin image to app screen 
 
 st.write("This is an app I created to foster self-awareness by way of exploration and adventure! It invites users to evalute their feelings and mental state prior to engaging with an interactive data analysis about penguins. Users can direct their analysis of this dataset based on their interests and preferences in terms of selections, highlighting the uniqueness of the personal interactions embedded into this app!") #displaying initial message
 
