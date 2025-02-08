@@ -5,7 +5,7 @@ st.markdown("Hi there, friend!") #displaying initial message
 st.title("Flippers in the Air like They Just Don't Care!")#displaying large title on the app screen
 st.image("flippers.png")#adding penguin image to app screen 
 
-st.write("This is an app I created to foster self-awareness by way of exploration and adventure! It invites users to evalute their feelings and mental state prior to engaging with an interactive data analysis about penguins. Users can direct their analysis of this dataset based on their interests and preferences in terms of selections, highlighting the uniqueness of the personal interactions embedded into this app!") #displaying initial message
+st.write("This is an app I created to foster self-awareness by way of exploration and adventure! It invites users to evalute their feelings and mental state prior to engaging with an interactive data analysis about penguins. Users can direct their analysis of this dataset based on their interests and preferences in terms of selections, highlighting the uniqueness of the personal interactions embedded into this app!") #displaying initial message about the app and it's purpose
 
 if st.button("What is a penguin's favorite type of lettuce? Click here to find out!"):#creating a button for users to interact with and has a message that changes when the button is clicked by the users
     st.write("Iceberg!🎉I hope I made you laugh!🚀")#this will appear when the button is clicked on by a user
@@ -15,7 +15,7 @@ else:
 color = st.color_picker("Pick the color that most resonates with your current mood:")#this creates a color picker that is interactive for users so they can select a color
 
 st.write(f"Take a second to think about how this color reflects your current state:)")#this will be displayed under the chosen color to enforce users to consider the relationship between their selected color and their current state of being/mood
-st.slider('Slide this based on how you feel about the connection you established between the selected color and your current state. 1 = What connection? I am lost. 2 = Wow this color really speaks to me right now.', min_value=1, max_value=5)
+st.slider('Slide this based on how you feel about the connection you established between the selected color and your current state. 1 = What connection? I am lost. 5 = Wow this color really speaks to me right now.', min_value=1, max_value=5)#introducing slider to promote further self-reflection for the user prior to engaging with the dataset
 import streamlit as st#adding data to streamlit
 import pandas as pd#importing pandas for handling data
 
@@ -43,14 +43,3 @@ st.dataframe(filtered_df)  # this will allow for the filtered table based on the
 df = pd.read_csv("data\penguins.csv")  # this code imports the corresponding penguin data using a relative path so that a CSV file can be loaded by working with external data in Streamlit and it displays the imported dataset for users to view
 st.write("Below is the (large) dataset loaded from a CSV file! Feel free to scroll through and admire its beauty!")#this message will appear on top of the dataset explaining to the users what they are viewing
 st.dataframe(df) #this provides access to the dataframe inside the appropriate data folder
-
-
-# Play around with more Streamlit widgets or elements by checking the documentation:
-# https://docs.streamlit.io/develop/api-reference
-# Use the cheat sheet for quick reference:
-# https://cheat-sheet.streamlit.app/
-
-### Challenge:
-# 1️⃣ Modify the dataframe (add new columns or different data).
-# 2️⃣ Add an input box for users to type names and filter results.
-# 3️⃣ Make a simple chart using st.bar_chart().
