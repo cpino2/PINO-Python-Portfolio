@@ -15,7 +15,7 @@ else:
 color = st.color_picker("Pick the color that most resonates with your current mood:")#this creates a color picker that is interactive for users so they can select a color
 
 st.write(f"Take a second to think about how this color reflects your current state:)")#this will be displayed under the chosen color to enforce users to consider the relationship between their selected color and their current state of being/mood
-
+st.slider('Now that you have had a moment to reflect, slide this based on how you feel. 1 = extremely sad & 5 = ecsatic:', min_value=1, max_value=5)
 import streamlit as st#adding data to streamlit
 import pandas as pd#importing pandas for handling data
 
