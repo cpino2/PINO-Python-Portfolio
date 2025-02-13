@@ -125,10 +125,10 @@ with col1:
 with col2:
     st.subheader("Cleaned Data Distribution")
     # Plot a histogram (with a KDE) for the selected column from the cleaned DataFrame.
-    fig, ax = plt.subplots()
-    sns.histplot(df_clean[column], kde=True)
+    fig, ax = plt.subplots() #create visualization using sub plots from plt (matt plot lib)/this sets up a blank canvas
+    sns.histplot(df_clean[column], kde=True)#draw visualization on canvas with heatmap to see how age is affected by imputing dif types of data/kde=true gives you a nice line to show you the type of distribution you have
     plt.title(f"Distribution of {column} after {method}")
-    st.pyplot(fig)
+    st.pyplot(fig) #show visualization
     st.subheader(f"{column}'s New Stats")
     # Display statistical summary for the cleaned data.
     st.write(df_clean[column].describe())
