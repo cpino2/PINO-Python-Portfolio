@@ -87,7 +87,7 @@ if method == "Original DF":
     pass  # Keep the data unchanged.
 elif method == "Drop Rows":
     # Remove all rows that contain any missing values.
-    df_clean = df_clean.dropna()
+    df_clean = df_clean.dropna(subset=[column])
 elif method == "Drop Columns (>50% Missing)":
     # Drop columns where more than 50% of the values are missing.
     df_clean = df_clean.drop(columns=df_clean.columns[df_clean.isnull().mean() > 0.5])
