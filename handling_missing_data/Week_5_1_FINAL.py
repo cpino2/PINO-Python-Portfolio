@@ -75,10 +75,13 @@ method = st.radio("Choose a method", [
 # Prepare a Copy of the DataFrame for Cleaning
 # ------------------------------------------------------------------------------
 # Create a copy to preserve the original data.
+# df is going to stak untouched
+# df_clean is a copy of df that will change with custom filters
 df_clean = df.copy()
 
 # ------------------------------------------------------------------------------
 # Apply the Selected Missing Data Handling Method
+st.dataframe(df_clean)
 # ------------------------------------------------------------------------------
 if method == "Original DF":
     pass  # Keep the data unchanged.
