@@ -108,6 +108,11 @@ st.dataframe(df_clean)
 # ------------------------------------------------------------------------------
 # Create two columns in the Streamlit layout for side-by-side comparison.
 col1, col2 = st.columns(2)
+#---------------inclass plot visualization
+st.subheader("Cleaned Data Distribution")
+fig, ax = plt.subplots() #plot canvas
+sns.histplot(df_clean(column), kde=True) #draw on canvas
+st.pyplot(fig) #realizing canvas
 
 # --- Original Data Visualization ---
 with col1:
