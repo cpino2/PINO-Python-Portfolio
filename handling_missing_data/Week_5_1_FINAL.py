@@ -101,6 +101,8 @@ elif method == "Impute Zero":
     # Replace missing values in the selected column with zero.
     df_clean[column] = df_clean[column].fillna(0)
 
+st.write(df_clean.shape)
+st.dataframe(df_clean)
 # ------------------------------------------------------------------------------
 # Side-by-Side Visualization: Original vs. Cleaned Data
 # ------------------------------------------------------------------------------
