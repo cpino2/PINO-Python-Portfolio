@@ -18,8 +18,7 @@
 - A new browser should open with the app, and the user should be able to enjoy the wonders of penguin data while practicing self-awareness!
 
 # Data Source 
-- Link to dataset: https://canvas.nd.edu/courses/113532/files/4660125?wrap=1
-
+- Link to dataset: basic-streamlit-app/data/penguins.csv
 
 # Structure of the App!
 The app is not very difficult to use! It invites the user to interact via. clicking buttons and selecting choices based on preference as a means of analyzing a dataset in a more personalized and enjoyable manner. It promotes self-awareness and exploration, highlighting the relationship between education and the self!
