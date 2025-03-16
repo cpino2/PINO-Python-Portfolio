@@ -5,7 +5,10 @@
 # Features
 - Education about penguin populations of interest
 - Mental Health prioritization through grounding and self-awareness
-- Promote stillness as well as a balanced lifestyle 
+- Promote stillness as well as a balanced lifestyle
+
+![image](https://github.com/user-attachments/assets/4f240fb6-b917-4a10-b219-08961d371e7f)
+
 
 # How to Use
 - Open the code in Visual Studio Code
