@@ -18,7 +18,7 @@
 - A new browser should open with the app, and the user should be able to enjoy the wonders of penguin data while practicing self-awareness!
 
 # Data Source 
-- Link to dataset: basic-streamlit-app/data/penguins.csv
+- Link to dataset: [basic-streamlit-app/data/penguins.csv](https://github.com/cpino2/PINO-Python-Portfolio/blob/1377971535f2a52933f178572abea1d5cd43a0c8/basic-streamlit-app/data/penguins.csv)
 
 # Structure of the App!
 The app is not very difficult to use! It invites the user to interact via. clicking buttons and selecting choices based on preference as a means of analyzing a dataset in a more personalized and enjoyable manner. It promotes self-awareness and exploration, highlighting the relationship between education and the self!
