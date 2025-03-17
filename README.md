@@ -1,4 +1,4 @@
-#PINO-Python Porfolio README
+# PINO-Python Porfolio README
 
 ## Purpose of Repository
 The purpose of this repository is to store the Python projects I create throughout the semester, such as the app I recently created, "Flippers in the Air like They Just Don't Care!," as well as my latest Tidy Data Project! 
