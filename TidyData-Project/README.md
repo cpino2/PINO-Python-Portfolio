@@ -1,4 +1,4 @@
-# Tidy Data Project: README
+# Tidy Data Project
 ## Project Overview
 - Goal: Apply the principles of tidy data to clean, transform, and do an exploratory data analysis on a dataset about olympic medalists.
 ## Tidy Data Principles Overview
@@ -24,5 +24,9 @@
 <img width="428" alt="image" src="https://github.com/user-attachments/assets/4b04fd97-3425-417d-b13e-3d1e7a33d125" />
 <img width="454" alt="image" src="https://github.com/user-attachments/assets/d4ce1f50-4576-4527-b669-6c68da77fbf2" />
 <img width="443" alt="image" src="https://github.com/user-attachments/assets/38c4c280-9ddf-4c59-a08b-816c83d8aba2" />
+
+## Code Snippets
+- The coding portion of this project that I am particularly proud of is learning how to drop the rows in the dataset with null values to make the dataframe more concise, which made it easier to create visualizations later in my project! Below is a snippet of the code I wrote to drop the null values in the Type of Medal column:
+<img width="1064" alt="image" src="https://github.com/user-attachments/assets/9f83cf7c-ca1d-4fe4-9048-23966507a31d" />
 
 
