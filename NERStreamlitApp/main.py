@@ -6,9 +6,7 @@ nlp = spacy.load("en_core_web_sm")#using this command to make sure the small Eng
 st.title("My NER Streamlit App")#displaying app title on its screen
 import pandas as pd
 #check this: to use the app, must run this in the terminal "streamlit run \Users\Owner\Documents\Test_Code\PINO-Python-Portfolio\NERStreamlitApp> streamlit run .\main.py"
-st.write("I created this Streamlit app for users to explore spaCy's Named Entity Recognition with their own custom labels and patterns. The app usess spaCy's EntityRuler to add custom rules and visualize detected entities in the text the user chooses to upload!")
-st.image("images/spacypipe.png")
-# text = "Here is a sample text I am going to enter so you can then enter your own!"#entering a sample text so user knows what is meant by the app
+st.write("I created this Streamlit app for users to explore spaCy's Named Entity Recognition with their own custom labels and patterns. The app usess spaCy's EntityRuler to add custom rules and visualize detected entities in the text the user chooses to upload!")# text = "Here is a sample text I am going to enter so you can then enter your own!"#entering a sample text so user knows what is meant by the app
 text = st.text_area("Type anything in the text box below! This text will be analyzed by spaCy's Named Entity Recognition feature so you can see the detectd entities in the text you provide!")
 st.write(text)
 st.write("Below you will select labels and patterns for spaCy's NER to output custom entities that match those labels and patterns you want your text to be categorized by in this analysis!")
