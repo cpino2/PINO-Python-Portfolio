@@ -7,7 +7,7 @@ st.title("My NER Streamlit App")#displaying app title on its screen
 import pandas as pd
 #check this: to use the app, must run this in the terminal "streamlit run \Users\Owner\Documents\Test_Code\PINO-Python-Portfolio\NERStreamlitApp> streamlit run .\main.py"
 st.write("I created this Streamlit app for users to explore spaCy's Named Entity Recognition with their own custom labels and patterns. The app usess spaCy's EntityRuler to add custom rules and visualize detected entities in the text the user chooses to upload!")
-st.image("spacypipe.png")#adding spacy pipeline image to app screen
+# st.image("spacypipe.png")#adding spacy pipeline image to app screen
 
 # text = "Here is a sample text I am going to enter so you can then enter your own!"#entering a sample text so user knows what is meant by the app
 text = st.text_area("Type anything in the text box below! This text will be analyzed by spaCy's Named Entity Recognition feature so you can see the detectd entities in the text you provide!")
