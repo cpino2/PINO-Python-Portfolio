@@ -1,26 +1,77 @@
 import streamlit as st #importing streamlit library
 import spacy#importing spaCy to ensure the installation was successful
 from spacy import displacy
+from spacy.pipeline import EntityRuler#importing spaCy's EntityRuler class from spaCy pipeline so user can add custom NER to spaCy pipeline when using this app
 import re #this needs to be imported to separate sentences that do not have punctuation from those that do
 nlp = spacy.load("en_core_web_sm")#using this command to make sure the small English model was downloaded
-st.title("My NER Streamlit App")#displaying app title on its screen
-import pandas as pd
-#check this: to use the app, must run this in the terminal "streamlit run \Users\Owner\Documents\Test_Code\PINO-Python-Portfolio\NERStreamlitApp> streamlit run .\main.py"
-st.write("I created this Streamlit app for users to explore spaCy's Named Entity Recognition with their own custom labels and patterns. The app usess spaCy's EntityRuler to add custom rules and visualize detected entities in the text the user chooses to upload!")# text = "Here is a sample text I am going to enter so you can then enter your own!"#entering a sample text so user knows what is meant by the app
-text = st.text_area("Type anything in the text box below! This text will be analyzed by spaCy's Named Entity Recognition feature so you can see the detectd entities in the text you provide!")
-st.write(text)
-st.write("Below you will select labels and patterns for spaCy's NER to output custom entities that match those labels and patterns you want your text to be categorized by in this analysis!")
-words = re.findall(r"[\w']+", text)
-label = st.text_input("Type in the label for the pattern you wish to look at first in the box below:")
-pattern_list = st.multiselect("In the text box below, enter the words that belong to the label you selected", options=words)
-lp1 = []
-for x in pattern_list:
-    lp1.append([{"label":label, "pattern":x}])
+st.title("My NER Streamlit App Project!")#displaying app title on its screen
+import pandas as pd#importing pandas library
+st.write("I created this Streamlit app for users to explore spaCy's Named Entity Recognition with their own custom labels and patterns. It usess spaCy's EntityRuler to add custom rules and visualize detected entities in the text the user chooses to upload! Let's have some fun with this!")#providing user with a description about the app and its purpose to get them excited and intrigued
+text = st.text_area(
+     "Type anything in the text box below! This text will be analyzed by spaCy's Named Entity Recognition feature so you can see the detected entities in the text you provide!",
+     placeholder="My name is Ceci and I am having fun learning to code!"
+     )#instructing user to input text so it can be analyzed by spaCy's NER feature and used placeholder to input a sample text so as to provide more guidance to the user/make instructions more clear
+st.write("You entered:")#printing this so reader can have confirmation their text was entered properly
+st.write(text)#printing text entered by user so they know their desired text was entered properly (confirmation)
+st.write("Below you will select labels and patterns for spaCy's NER to output custom entities that match those labels and patterns you want your text to be categorized by in this analysis!")#printing instructions on app so user can define custom entities on the app by selecting the patterns/labels by which they want spaCy's NER feature to analyze their desired text entered above 
+words = re.findall(r"[\w']+|[.,!?;()]", text)#extracting all words and punctution marks from the text entered by the user to then put them into a multiselect so users can more easily define their custom entities/easily engage with the app catered to their unique desire
+label = st.text_input("Type in the label for the pattern you wish to look at first in the box below:")#creating a text input box for user to type in label they want to look at first (part of defining custom entities)
+pattern_list = st.multiselect("In the text box below, enter the words or punctuation that belong to the label you selected", options=words)#creates a multiselect dropdown with options to enter being any of the words in the text the user entered above (part of defining custom entities in the app)
+lp = [{"label": label, "pattern": word} for word in pattern_list]
+list_sublists = [lp]
+adding_another_label = st.selectbox("Do you want to add another label?", options=["", "Yes", "No"])
+counter = 1
+while adding_another_label == "Yes":
+    st.write(f"Define Label {counter + 1}:")
+    label1 = st.text_input(f"Enter label name for label {counter + 1}:", key=f"label{counter}")
+    pattern_list1 = st.multiselect(f"Select words for label {counter + 1}:", options=words, key=f"pattern{counter}")
 
-continuous = st.selectbox("Let's add another label! Do you want to?", options=("", "yes", "No"))
+    new_lp = [{"label": label1, "pattern": word} for word in pattern_list1]
+    list_sublists.append(new_lp)
 
-#doc = nlp(text)#applying the NLP pipeline to the text to create a Doc container
-# print(doc)#printing the text after having created a Doc container
+    counter += 1
+    adding_another_label = st.selectbox(f"Do you want to add label {counter + 1}?", options=["", "Yes", "No"], key=f"continue{counter}")
+if "entity_ruler" not in nlp.pipe_names:
+    ruler = nlp.add_pipe("entity_ruler", before="ner")
+else:
+    ruler = nlp.get_pipe("entity_ruler")
+for sublist in list_sublists:
+    ruler.add_patterns(sublist)
+doc = nlp(text)
+show = displacy.render(doc, style="ent", jupyter=False)
+st.markdown(show, unsafe_allow_html=True)
+
+
+
+
+
+
+# lp = [] #creating an empty list to store entity patterns
+# for x1 in pattern_list:#for loop to go through all of the selected words in the "pattern_list" that is defined by the words the user inputted that belonged to the label they wanted to look at first 
+#      lp.append({"label": label, "pattern": x1})#adding items to the empty list created "lp" using a key-value pair (label-pattern) to store the label for the entity defined by the user as well as the pattern which stores the word the user defined as having belonged to their label of choice (also part of user defining custom entities)
+# adding_another_label = st.selectbox("Let's add another label! Do you want to?", options=("", "yes", "No"))#gives user the option to define another label if they would like, increasing engagement with the app
+# counter = 1
+# list_sublists = [lp]
+# while adding_another_label  == "Yes":
+#     st.write(f"Enter Label and Pattern {counter}:")
+#     label1 = st.text_input(f"Enter the label name for pattern {counter+1} you are trying to find: ", key=f"label{counter}")
+#     pattern_list1 = st.multiselect(f"Pick words from the text that belong to label {counter+1}:", options=words, key=f"label{counter}")
+#     lp = []
+#     for x1 in pattern_list1:
+#          lp.append({"label": label1, "pattern": x1})
+#     list_sublists.append(lp)
+#     counter +=1
+#     adding_another_label = st.selectbox(f"Do you want to add label {counter+1}?", options = ["", "Yes", "No"], key=f"continue{counter}")
+# ruler = EntityRuler(nlp, overwrite_ents=True)#ensures custom defined entities by the user override default ones in the spaCy pipeline that have the potential to overlap/interfere with the user's custom defined entities
+# if adding_another_label == "Yes" or adding_another_label == "No":
+#     if "entity_ruler" not in nlp.pipe_names: 
+#         nlp.add_pipe(ruler, name="entity_ruler", before="ner")
+# for sublist in list_sublists:
+#      ruler.add_patterns(sublist)
+# doc = nlp(text)#applying the NLP pipeline to the text to create a Doc container
+# show = displacy.render(doc, style="ent", jupyter=False)
+# st.markdown(show, unsafe_allow_html=True)
+#print(doc)#printing the text after having created a Doc container
 # print(len(doc))#printing the length of the doc container
 # print(len(text))#printing the length of the text without the doc container
 # for token in text[:10]:
