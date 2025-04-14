@@ -9,9 +9,11 @@
 - NER models understand Named Entities depending on the data they have been trained with!
 - spaCy has built in NER!
 - After importing spaCy (as seen below), a sample text can be entered for spaCy's NER to analyze it with!
+  
   <img width="227" alt="image" src="https://github.com/user-attachments/assets/a0b79337-556a-4d7c-845b-10a5280d1d1a" />
   
 - It is important to consider entity ruler must be added to the spaCy pipeline before NER if it does not already exist in spaCy pipeline, which can be done using the code below:
+  
   <img width="316" alt="image" src="https://github.com/user-attachments/assets/fd48e21c-37fd-417a-a5c1-8417554f78c0" />
   
 - More detailed information can be found at any of these links: https://www.analyticsvidhya.com/blog/2021/06/nlp-application-named-entity-recognition-ner-in-python-with-spacy/ & https://spacy.io/api/entityrecognizer
