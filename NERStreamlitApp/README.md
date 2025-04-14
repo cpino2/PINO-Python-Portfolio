@@ -16,8 +16,15 @@ It is important to consider entity ruler must be added to the spaCy pipeline bef
   
 - <img width="316" alt="image" src="https://github.com/user-attachments/assets/fd48e21c-37fd-417a-a5c1-8417554f78c0" />
   
-- More detailed information can be found at any of these links: https://www.analyticsvidhya.com/blog/2021/06/nlp-application-named-entity-recognition-ner-in-python-with-spacy/ & https://spacy.io/api/entityrecognizer
+More detailed information can be found at any of these links: https://www.analyticsvidhya.com/blog/2021/06/nlp-application-named-entity-recognition-ner-in-python-with-spacy/ & https://spacy.io/api/entityrecognizer
 ## Set Up Steps
+- To run the app locally, one must first ensure they are in the proper Python environment in Visual Studio Code (anaconda)
+- Next, one must locate the proper folder in the terminal. This can be done as follows:
+- <img width="599" alt="image" src="https://github.com/user-attachments/assets/c49d01c9-3112-4fa7-8293-35e128c93272" />
+This should then take the user to an external browser from which they can engage with the app!
+- It is also necessary to import all requried libraries for the app to function properly and the code to run error-free:
+- <img width="263" alt="image" src="https://github.com/user-attachments/assets/2a2786e1-3433-4e0d-99ef-a0f776e5b729" />
+It is also necessary to load the small English model from spaCy for the NER app to work properly as well!
 # Running the App locally:
 - Link to deployed version of app on Streamlit Cloud:
 - Required libraries and installation commands: (snip it of code)
