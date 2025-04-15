@@ -39,9 +39,8 @@ Here is what the sample text looks like at first glance when users open the app:
 - <img width="450" alt="image" src="https://github.com/user-attachments/assets/c0036914-b0eb-465e-aeff-57e8d7a111d3" />
 If this were the text to have been analyzed, the output might look something like this, for example:
 - <img width="434" alt="image" src="https://github.com/user-attachments/assets/20c0f9a5-e901-47d6-9538-50c40093e790" />
-# References
-- link to spacy documentation (findall) and screenshot
-- guides on using entityruler
-- other resources i used
-# visual examples
-- screenshot showing app interface and output
+# More References
+- In the process of creating this app, I learned a lot about spaCy documentation!
+- I became familiar with code lines such as "import re" which I learned was necessary to extract punctuation and words from text user enters when engaging with the app. You can learn more about this function here: https://spacy.io/usage/linguistic-features
+- I also learned more about the EntityRuler itself, specifically its abilitiy to create custom patterns with corresponding labels, which the users are able to engage with through this app. More on this can be found here: https://ner.pythonhumanities.com/02_01_spaCy_Entity_Ruler.html
+- I also became familiar with some organizational house-keeping tools to use for ease of engagement with the app for the user, such as the function "counter" which allowed the user to keep track of how many labels they added to analyze their text and the named entities that matched each!
