@@ -16,6 +16,7 @@ My latest Tidy Data Project was an opportunity to practice applying the principl
 The purpose of the NER Streamlit App I created is for users to explore spaCy's Named Entity Recognition with their own custom labels and patterns, as it usess spaCy's EntityRuler to add custom rules so the user can visualize detected entities from the text they input! This project compliments my overall portfolio because it highlights a real-world application of Natural Language Processing and demonstrates my growth in terms of coding skill development and confidence with new material. It also incorporates deployment to the Streamlit Community Cloud, which facilitates sharing projects with others; this was one of my goals for developing my repository since the beginning of the year! This image demonstrates a possible output of a user engaging with the app, highlighting spaCy's NER feature and ability to create visualizations of detected entities with custom patterns and labels: 
 
 <img width="419" alt="image" src="https://github.com/user-attachments/assets/bb595c36-4f2f-40da-8de8-2366df267d2c" />
+
 ### Here is a link to my new NER app project repository: https://github.com/cpino2/PINO-Python-Portfolio/tree/main/NERStreamlitApp
 
 ## Goals for Developing Repository 
