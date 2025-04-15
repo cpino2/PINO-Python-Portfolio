@@ -1,5 +1,6 @@
 import streamlit as st #importing streamlit library
 import spacy#importing spaCy library
+import pandas as pd #import pandas library
 from spacy import displacy#allows for entities to be visualized eventually in the app
 from spacy.pipeline import EntityRuler#importing spaCy's EntityRuler class from spaCy pipeline so user can add custom NER to spaCy pipeline when using this app
 import re #necessary to extract punctuation and words from text user enters when engaging with the app
