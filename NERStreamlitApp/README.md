@@ -30,12 +30,15 @@ It is also necessary to load the small English model from spaCy for the NER app 
 Upon installing the proper libraries, a requirements folder will appear in the NERStreamlitApp folder going through all of the libraries imported for the execution of the app's creation! This is what it will look like in that temporary folder created:
 - <img width="752" alt="image" src="https://github.com/user-attachments/assets/691c1320-d308-45a9-a452-befabc04259b" />
 # Link to deployed version of app on Streamlit Cloud:
-- 
+- https://nerapppino.streamlit.app/
 # App Features
-- how user can upload text
-- how user can define entity patterns
-- how user can view output
-- include example patterns and usage notes (screenshots)
+- Upload text by typing in text box provided (sample text appears upon firt glance but user can type in box and override sample text with their own!)
+- Define entity patterns based on preference of what words or punctuation user wants to analyze based on their custom input
+- User can view output by following the instructions on the app and using the multiselect feature to insert words or punctuation that match with their desired label
+Here is what the sample text looks like at first glance when users open the app:
+- <img width="450" alt="image" src="https://github.com/user-attachments/assets/c0036914-b0eb-465e-aeff-57e8d7a111d3" />
+If this were the text to have been analyzed, the output might look something like this, for example:
+- <img width="434" alt="image" src="https://github.com/user-attachments/assets/20c0f9a5-e901-47d6-9538-50c40093e790" />
 # References
 - link to spacy documentation (findall) and screenshot
 - guides on using entityruler
