@@ -22,12 +22,15 @@ More detailed information can be found at any of these links: https://www.analyt
 - Next, one must locate the proper folder in the terminal. This can be done as follows:
 - <img width="599" alt="image" src="https://github.com/user-attachments/assets/c49d01c9-3112-4fa7-8293-35e128c93272" />
 This should then take the user to an external browser from which they can engage with the app!
-- It is also necessary to import all requried libraries for the app to function properly and the code to run error-free:
-- <img width="263" alt="image" src="https://github.com/user-attachments/assets/2a2786e1-3433-4e0d-99ef-a0f776e5b729" />
-It is also necessary to load the small English model from spaCy for the NER app to work properly as well!
-# Running the App locally:
-- Link to deployed version of app on Streamlit Cloud:
-- Required libraries and installation commands: (snip it of code)
+In the terminal, one must run "pip install spacy" and "python -m spacy download en_core_web_sm"
+It is also necessary to import all requried libraries in the notebook for the streamlit app to function properly and the code to run error-free:
+- Required libraries = streamlit, spaCy, pandas, 
+- <img width="265" alt="image" src="https://github.com/user-attachments/assets/e91ccb2a-3945-4044-9923-fc714c4568fd" />
+It is also necessary to load the small English model from spaCy for the NER app to work properly!
+Upon installing the proper libraries, a requirements folder will appear in the NERStreamlitApp folder going through all of the libraries imported for the execution of the app's creation! This is what it will look like in that temporary folder created:
+- <img width="752" alt="image" src="https://github.com/user-attachments/assets/691c1320-d308-45a9-a452-befabc04259b" />
+# Link to deployed version of app on Streamlit Cloud:
+- 
 # App Features
 - how user can upload text
 - how user can define entity patterns
