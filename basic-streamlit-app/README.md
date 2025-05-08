@@ -18,9 +18,6 @@ Problem the App Solves:
 - Use the command "streamlit run .\main.py" to run the code specific to the app itself. The result of this should be a display that says "You can now view your Streamlit app in your browser" and there should also be a Local URL link and a Network URL link provided.
 - A new browser should open with the app, and the user should be able to enjoy the wonders of penguin data while practicing self-awareness!
 
-# Link to Deployed Version of App on Streamlit Cloud
-
-
 # App Features
 - Education about penguin populations of interest
 - Mental Health prioritization through grounding and self-awareness
@@ -41,5 +38,7 @@ The app is not very difficult to use! It invites the user to interact via. click
 Dataset Used: [basic-streamlit-app/data/penguins.csv](https://github.com/cpino2/PINO-Python-Portfolio/blob/1377971535f2a52933f178572abea1d5cd43a0c8/basic-streamlit-app/data/penguins.csv)
 
 # Visualizations of App in Use
+Prior to engaging with the app, I included a light-hearted joke and opportunity for the user to select a color that resonates with their mood, emphasizing the importance of self-reflection before embarking on a task!
+<img width="655" alt="image" src="https://github.com/user-attachments/assets/1f8d2243-9ae6-4776-b2ca-9557a21d249e" />
 
 
