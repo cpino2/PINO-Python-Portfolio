@@ -45,6 +45,9 @@ How to launch the app:
 - This will open an external browser for the user to engage with the app
 <img width="571" alt="image" src="https://github.com/user-attachments/assets/823eab64-dc16-417e-ac43-637d79ad33a9" />
 
+# Link to Deployed Version of the App on Streamlit Cloud
+https://pinoalzheimersriskpredictorappfinal.streamlit.app/
+
 # App Features
 User Inputs
 - ID (way to distinguish patients from one another
