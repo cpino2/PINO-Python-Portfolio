@@ -66,5 +66,18 @@ Training Predictive Model:
 Requirements File:
 - About its function - https://medium.com/@mattplantz/using-streamlits-community-cloud-for-deployment-2c0659b1f07c
 
-# Visual Examples
-- Embed screenshots showing the app in use.
+# Visualizations of the App in Use
+The app demonstrates a visualization of the dataset that was used to train the predictive model so the user understands the patterns the model was trained to recognize, influencing the predictions it will make when taking into account inputs from the user.
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/40764967-9c55-49c0-9df0-4eb3d5d68776" />
+
+
+The app outputs a data table with the user's input values as well as a "low" or "high" risk warning based on the prediction made when taking into account the user's inputs and how they relate to the learned patterns the model recognizes as a result of having been trained with a dataset earlier on.
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/8f888029-1244-4e2e-9700-e0dc4ad16648" />
+
+The app also provides URL's that the user can browse if interested in learning more about risk factors and Alzheimer's disease. The sources come from the Mayo Clinic and the National Institute of Health, which are both renowned sources and highly trusted amoung the scientific community and in healthcare overall.
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/39fa2af5-b2ef-4d1d-a6fc-975d692c8e13" />
+
+
