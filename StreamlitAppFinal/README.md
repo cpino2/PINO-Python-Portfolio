@@ -22,7 +22,10 @@ Local Installation Steps:
 - Required libraries = streamlit, spaCy, pandas, scikit-learn, openpyxl
 <img width="309" alt="image" src="https://github.com/user-attachments/assets/2de95942-c557-4b95-bafe-6b271cf38d14" />
 
-- In terminal, must run "pip install openpyxl", "conda install openpyxl", "conda activate ner_app", "pip install openpyxl"
+In terminal, 
+- Must run "pip install openpyxl", "conda install openpyxl", "conda activate ner_app", "pip install openpyxl", "git add StreamlitAppFinal/alzheimersdataset.xlsx", "git commit -m "Add cleaned dataset", "git push origin main" so the excel file can be read and the predictive model can be trained properly
+- Must run “pip install scikit-learn pandas openpyxl streamlit” to install required packages to use the model.predict() function later on to train the predictive model based on the loaded excel dataset
+
  
 Dependency list:
 - Create a requirements.txt file to install all necessary libraries all at once!
@@ -76,12 +79,26 @@ Stack Overflow:
 - Label Encoding - https://stackoverflow.com/questions/24458645/label-encoding-across-multiple-columns-in-scikit-learn
 - Filter out Responses to Tidy Dataset - https://stackoverflow.com/questions/37213556/remove-rows-that-contain-false-in-a-column-of-pandas-dataframe
 - Excel File - https://stackoverflow.com/questions/74275058/importerror-missing-optional-dependency-openpyxl-use-pip-or-conda-to-install
+- Age Input - https://docs.streamlit.io/develop/api-reference/widgets/st.number_input
+- Sex Input Select Box - https://docs.streamlit.io/develop/api-reference/widgets/st.selectbox
+- Education Level Input Slider Widget - https://docs.streamlit.io/develop/api-reference/widgets/st.slider
+- Risk Predictor Button Output - https://docs.streamlit.io/develop/api-reference/status/st.warning
 
 Training Predictive Model:
 - Assigning Inputs & Outputs - https://discuss.streamlit.io/t/machine-learning/15457
 
 Requirements File:
 - About its function - https://medium.com/@mattplantz/using-streamlits-community-cloud-for-deployment-2c0659b1f07c
+
+About Predictive Model:
+- Random Forest Classifier: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+- Distinguishing between data to train model and user input: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+- More on scikit-learn: https://scipy-lectures.org/packages/scikit-learn/index.html
+- Algorithim Underlying Random Forest Classifier: https://www.e2enetworks.com/blog/random-forest-algorithm-in-machine-learning-a-guide
+
+Alzheimer's Disease Research:
+- APOE4 Gene: https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/in-depth/alzheimers-genes/art-20046552
+- Lifestyle Changes to Mitigate Likelihood of Disease Onset: https://www.nia.nih.gov/health/alzheimers-and-dementia/preventing-alzheimers-disease-what-do-we-know
 
 # Visualizations of the App in Use
 The app demonstrates a visualization of the dataset that was used to train the predictive model so the user understands the patterns the model was trained to recognize, influencing the predictions it will make when taking into account inputs from the user.
