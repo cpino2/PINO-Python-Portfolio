@@ -39,10 +39,11 @@ Dependency list:
 
 
 How to launch the app: 
-- Next, locate the proper folder in the terminal:
+- Locate the proper folder in the terminal
+- In terminal, run "PS C:\Users\Owner\Documents\Test_Code\PINO-Python-Portfolio> cd .\StreamlitAppFinal\"
+- Then, in terminal, run "PS C:\Users\Owner\Documents\Test_Code\PINO-Python-Portfolio\StreamlitAppFinal> streamlit run .\main.py"
+- This will open an external browser for the user to engage with the app
 <img width="571" alt="image" src="https://github.com/user-attachments/assets/823eab64-dc16-417e-ac43-637d79ad33a9" />
-
-- Takes user to external browser to engage with app!
 
 # App Features
 User Inputs
