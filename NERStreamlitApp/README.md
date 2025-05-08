@@ -1,4 +1,4 @@
-## Project Overview
+# Project Overview
 - Purpose: Promote user exploration of spaCy's Named Entity Recognition Feature
 - Features: Custom labels and patterns, visualization of detected entities using spaCy's EntityRuler feature
 ## SpaCy's Approach to NER - Background 
