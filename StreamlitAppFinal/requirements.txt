@@ -6,7 +6,7 @@ spacy==3.8.5
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
 streamlit==1.44.1
 #list this since using streamlit library
-scikit-learn 
+scikit-learn==1.2.2
 #need to list this in requirements.txt because of the random forest classifier imported to train the predictive model 
-openpyxl
+openpyxl==3.1.2
 #need this for excel file to work when deploying streamlit app to community cloud 
