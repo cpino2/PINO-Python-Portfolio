@@ -47,11 +47,11 @@ model = RandomForestClassifier()#creating a new instance of random forest classi
 model.fit(X_features_inputs, y_target_output)#train the predictive model to consider the input features (sex, age, education level, APOE 4 status, family history) when predicting an output (high risk or low risk of developing Alzheimer's) so the model can learn patterns and be more accurate when making predictions based on user input
 expander = st.expander("See more about Random Forest Classifier:")
 expander.write('''
-    Learn more about the Predictive Model using these links:
-[Random Forest Classifier,](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)\n
-[Distinguishing between data to train model and user input](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
-More on scikit-learn: https://scipy-lectures.org/packages/scikit-learn/index.html
-Algorithim Underlying Random Forest Classifier: https://www.e2enetworks.com/blog/random-forest-algorithm-in-machine-learning-a-guide
+    Learn more about the Predictive Model using these links:\n
+[Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)\n
+[Distinguishing between data to train model and user input](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)\n
+[More on scikit-learn](https://scipy-lectures.org/packages/scikit-learn/index.html)\n
+[Algorithim Underlying Random Forest Classifier](https://www.e2enetworks.com/blog/random-forest-algorithm-in-machine-learning-a-guide)
 ''')
 
 #USER ENGAGEMENT/INPUT
