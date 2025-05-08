@@ -12,6 +12,7 @@ Motivation Behind App:
   
 Problem the App Solves:
 - Lack of Awareness - Detecting risk level (earlier rather than later) can encourage users to be proactive and make necessary lifestyle changes while making their health a priority
+  
 ![image](https://github.com/user-attachments/assets/f662b7ad-a937-4d08-a9b1-358ce5658568)
 
 # Setup & Run
@@ -38,7 +39,20 @@ How to launch the app:
 - Outputs.
 
 # References & Resources
-Link to any libraries, tutorials, or documentation you used.
+Exploring Streamlit Community Cloud for Ideas about Disease Predictor Models:
+- https://bihshtein-garmin-main-hufvkl.streamlit.app/
+
+Dataset Used to Train Model
+- Could not access dataset from National Institute of Health (NIH), so I created my own based on the following conclusions made from research conducted in the NIH
+- https://www.nia.nih.gov/health/alzheimers-causes-and-risk-factors/alzheimers-disease-genetics-fact-sheet
+- Here is what the Dataset I created looked like:
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/78b9855a-45d9-4aa8-9d95-6f79d30c4598" />
+
+
+Streamlit Commands I learned more about while creating my app: 
+- textbox: https://discuss.streamlit.io/t/how-to-add-a-streamlit-editable-code-editor-with-python-syntax-highlighting/54473/3
+- 
 
 # Visual Examples
 - Embed screenshots showing the app in use.
