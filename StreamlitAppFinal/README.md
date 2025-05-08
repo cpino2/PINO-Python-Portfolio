@@ -10,12 +10,15 @@ Motivation Behind App:
 - My family and I have become more aware of our lifestyle habits ever since he was diagnosed
 - I hope to encourage users to be proactive about their health so as to maximize their condition for as long as possible!
   
+Problem the App Solves:
+- Lack of Awareness - Detecting risk level (earlier rather than later) can encourage users to be proactive and make necessary lifestyle changes while making their health a priority
+![image](https://github.com/user-attachments/assets/f662b7ad-a937-4d08-a9b1-358ce5658568)
+
 # Setup & Run
 Local Installation Steps: 
 -  Import all requried libraries in the notebook for the streamlit app to function properly and the code to run error-free:
 - Required libraries = streamlit, spaCy, pandas, scikit-learn, openpyxl
 <img width="309" alt="image" src="https://github.com/user-attachments/assets/2de95942-c557-4b95-bafe-6b271cf38d14" />
-- 
  
 Dependency list:
 - Create a requirements.txt file to install all necessary libraries all at once!
@@ -26,11 +29,16 @@ How to launch the app:
 - To run the app locally, ensure in the proper Python environment in Visual Studio Code (anaconda)
 - Next, locate the proper folder in the terminal:
 <img width="571" alt="image" src="https://github.com/user-attachments/assets/823eab64-dc16-417e-ac43-637d79ad33a9" />
+
 - Takes user to external browser to engage with app!
 
+# App Features
+- Describe user inputs
+- Main functions
+- Outputs.
 
-Project Overview: What problem does the app solve?
-Setup & Run Instructions: Local installation steps, dependency list (with versions), and how to launch the app.
-App Features: Describe user inputs, main functions, and outputs.
-References & Resources: Link to any libraries, tutorials, or documentation you used.
-Visual Examples: Embed screenshots showing the app in use.
+# References & Resources
+Link to any libraries, tutorials, or documentation you used.
+
+# Visual Examples
+- Embed screenshots showing the app in use.
