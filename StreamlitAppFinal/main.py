@@ -47,7 +47,7 @@ y_target_output = df["Diagnosis"]#assigning the output that the model is going t
 #ABOUT RANDOM FOREST CLASSIFIER
 model = RandomForestClassifier()#creating a new instance of random forest classifier (machine learning algorithm that will combine predictions made in trained model to make accurate predictions when interpreting user inputs from the app)
 model.fit(X_features_inputs, y_target_output)#train the predictive model to consider the input features (sex, age, education level, APOE 4 status, family history) when predicting an output (high risk or low risk of developing Alzheimer's) so the model can learn patterns and be more accurate when making predictions based on user input
-expander = st.expander("Click here to learn more about Random Forest Classifier:")
+expander = st.expander("Click here to learn more about how the predictive model works using Random Forest Classifier:")
 expander.write('''
     Random Forest Classifier is a meta estimator that is used to train the predictive model underlying this app. Learn more using the links below:\n
 [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)\n
