@@ -1,7 +1,7 @@
 # PINO-Python Porfolio
 
 ## Purpose of Repository
-The purpose of this repository is to store the Python projects I create throughout the semester, such as the app I recently created, "Flippers in the Air like They Just Don't Care!," as well as my latest Tidy Data Project! 
+The purpose of this repository is to store the Python projects I've created in an organized manner, such as the Alzhiemer's Disease Risk Predictor app I recently created, as well as the Named Entity Recognition App I created using spaCy's NER Pipeline, among others!
 
 ## At A Glance
 Final Streamlit App: Alzheimer's Disease Risk Predictor Based on User Input (Age, Sex, Education Level, APOE4 Status, Family History)
