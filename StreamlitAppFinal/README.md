@@ -17,21 +17,26 @@ Problem the App Solves:
 
 # Setup & Run
 Local Installation Steps: 
--  Ensure in the proper Python environment in Visual Studio Code (anaconda)
+-  Ensure you are in the proper Python environment in Visual Studio Code (anaconda)
 -  Import all requried libraries in the notebook for the streamlit app to function properly and the code to run error-free:
 - Required libraries = streamlit, spaCy, pandas, scikit-learn, openpyxl
-<img width="309" alt="image" src="https://github.com/user-attachments/assets/2de95942-c557-4b95-bafe-6b271cf38d14" />
+<img width="358" alt="image" src="https://github.com/user-attachments/assets/1d6a0af9-133a-4f22-b31a-cb1553b1c680" />
+
 
 In terminal, 
 - Must run "pip install openpyxl", "conda install openpyxl", "conda activate ner_app", "pip install openpyxl", "git add StreamlitAppFinal/alzheimersdataset.xlsx", "git commit -m "Add cleaned dataset", "git push origin main" so the excel file can be read and the predictive model can be trained properly
 - Must run “pip install scikit-learn pandas openpyxl streamlit” to install required packages to use the model.predict() function later on to train the predictive model based on the loaded excel dataset
+- I ended up saving my dataset as a ".csv" file eventually, yet I was initially striving to deploy the app using an excel file which is why all these commands were run in my terminal!
+- Hence, it is not necessary to run these commands if using a ".csv" file, yet, I researched all about using an excel file before deciding to stick with a csv file so I am leaving all of the informaion here so the user can explore whichever way they wish.
 
  
 Dependency list:
-- Create a requirements.txt file to install all necessary libraries all at once!
+- Inside terminal, run "pipreqs" and a requirements.txt file will be created listing all necessary libraries
 - Allows Streamlit to recreate necessary Python environment once deployed to Streamlit Community Cloud
+- Must also add in spaCy language model because app works with spaCy (this is the URL in the image below that appears in the requirements.txt file)
 - Here is how this dependency list should appear:
-<img width="739" alt="image" src="https://github.com/user-attachments/assets/bd7133ec-8ea1-4abb-95d0-534bb095d8b5" />
+<img width="758" alt="image" src="https://github.com/user-attachments/assets/8b6ce7c3-0925-416e-9618-3ba9241a4c07" />
+
 
 How to launch the app: 
 - Next, locate the proper folder in the terminal:
