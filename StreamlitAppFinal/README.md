@@ -12,11 +12,17 @@ Motivation Behind App:
   
 # Setup & Run
 Local Installation Steps: 
--  Must import 
+-  Must import the necessary libraries
+<img width="309" alt="image" src="https://github.com/user-attachments/assets/2de95942-c557-4b95-bafe-6b271cf38d14" />
+- 
+ 
 Dependency list:
 - 
 How to launch the app: 
-- 
+- To run the app locally, ensure in the proper Python environment in Visual Studio Code (anaconda)
+- Next, locate the proper folder in the terminal:
+<img width="571" alt="image" src="https://github.com/user-attachments/assets/823eab64-dc16-417e-ac43-637d79ad33a9" />
+
 Project Overview: What problem does the app solve?
 Setup & Run Instructions: Local installation steps, dependency list (with versions), and how to launch the app.
 App Features: Describe user inputs, main functions, and outputs.
