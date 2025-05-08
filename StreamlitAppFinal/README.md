@@ -35,9 +35,25 @@ How to launch the app:
 - Takes user to external browser to engage with app!
 
 # App Features
-- Describe user inputs
-- Main functions
-- Outputs.
+User Inputs
+- ID
+-   Way to distinguish patients from one another
+- Age (numeric value in years)
+- Sex (male or female)
+- Education Level (years of school completed, key provided in app to aid user)
+- APOE4 Status (yes, no, or unsure)
+- Family History
+
+Main functions
+- Predictive machine learning model was trained using an excel dataset created based on NIH data
+- Model learns to recognize patterns amongst inputs and make a prediction based on those learned patterns
+- App requires users to input data so model can predict high or low risk of Alzheimer's disease onset by recognizing patterns it learned as a result of being trained with the initial dataset
+
+Outputs
+- App predicts high or low risk of disease onsest
+- 1 = High risk
+- 0 = Low risk
+- Strings converted to numeric values to ensure the predictive machine learning model functions error-free and runs smoothly
 
 # References & Resources
 Exploring Streamlit Community Cloud for Ideas about Disease Predictor Models:
