@@ -9,12 +9,17 @@ Problem the App Solves:
 - Facilitates data analysis and increases efficiency of interpreting results
 
 ## Set Up & Run
+Directions
 1. Import the dataset by either mounting google drive or calling upon the relative file path (dataset) once moved to the correct folder (in this case, that folder would by TidyData-Project). You can confirm that the dataset file is in the correct location by using the command "cd .\TidyData-Project" to locate the TidyData-Project folder. One can ensure they are in this folder by using the command "cd .\TidyData-Project\ ls" and this should result in the display of the appropriate folders that are within the TidyData-Project folder itself.
 2. After the dataset is imported by having adjusted the file path being called upon depending on whether the user is running the code in google colab (can mount google drive) or visual studio code (needs to rely on relative file path), the user can run the notebook by clicking "Run All" on the top left of the notebook, as shown below
 <img width="641" alt="image" src="https://github.com/user-attachments/assets/630eab9c-fb3b-4bdc-b677-067392ffb599" />
 
 3. At this point, the user should begin to see their screen populate with data tables, pivot tables, and visualizations, along with markdown cells explaining all of the code and content it pertains to.
 ** It is important that the user understands the notebook will only run successfully if both pandas and seaborn are imported, as the code itself and visualizations rely on both the pandas library and the seaborn library.
+   
+Code Snippet I am Particularly Proud of:
+- I learned how to drop the rows in the dataset with null values to make the dataframe more concise, which made it easier to create visualizations later in my project! Below is a snippet of the code I wrote to drop the null values in the Type of Medal column:
+<img width="1064" alt="image" src="https://github.com/user-attachments/assets/9f83cf7c-ca1d-4fe4-9048-23966507a31d" />
 
 ## App Features
 1. Each variable forms a column.
@@ -34,9 +39,5 @@ About the Dataset
 <img width="428" alt="image" src="https://github.com/user-attachments/assets/4b04fd97-3425-417d-b13e-3d1e7a33d125" />
 <img width="454" alt="image" src="https://github.com/user-attachments/assets/d4ce1f50-4576-4527-b669-6c68da77fbf2" />
 <img width="443" alt="image" src="https://github.com/user-attachments/assets/38c4c280-9ddf-4c59-a08b-816c83d8aba2" />
-
-## Code Snippets
-- The coding portion of this project that I am particularly proud of is learning how to drop the rows in the dataset with null values to make the dataframe more concise, which made it easier to create visualizations later in my project! Below is a snippet of the code I wrote to drop the null values in the Type of Medal column:
-<img width="1064" alt="image" src="https://github.com/user-attachments/assets/9f83cf7c-ca1d-4fe4-9048-23966507a31d" />
 
 
