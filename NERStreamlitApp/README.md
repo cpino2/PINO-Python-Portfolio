@@ -24,7 +24,7 @@ It is important to consider entity ruler must be added to the spaCy pipeline bef
 - <img width="316" alt="image" src="https://github.com/user-attachments/assets/fd48e21c-37fd-417a-a5c1-8417554f78c0" />
   
 More detailed information can be found at any of these links: https://www.analyticsvidhya.com/blog/2021/06/nlp-application-named-entity-recognition-ner-in-python-with-spacy/ & https://spacy.io/api/entityrecognizer
-## Set Up Steps
+## Set Up & Run
 - To run the app locally, one must first ensure they are in the proper Python environment in Visual Studio Code (anaconda)
 - Next, one must locate the proper folder in the terminal. This can be done as follows:
 - <img width="599" alt="image" src="https://github.com/user-attachments/assets/c49d01c9-3112-4fa7-8293-35e128c93272" />
@@ -46,8 +46,10 @@ Here is what the sample text looks like at first glance when users open the app:
 - <img width="450" alt="image" src="https://github.com/user-attachments/assets/c0036914-b0eb-465e-aeff-57e8d7a111d3" />
 If this were the text to have been analyzed, the output might look something like this, for example:
 - <img width="434" alt="image" src="https://github.com/user-attachments/assets/20c0f9a5-e901-47d6-9538-50c40093e790" />
-# More References
+# References & Resources
 - In the process of creating this app, I learned a lot about spaCy documentation!
 - I became familiar with code lines such as "import re" which I learned was necessary to extract punctuation and words from text user enters when engaging with the app. You can learn more about this function here: https://spacy.io/usage/linguistic-features
 - I also learned more about the EntityRuler itself, specifically its abilitiy to create custom patterns with corresponding labels, which the users are able to engage with through this app. More on this can be found here: https://ner.pythonhumanities.com/02_01_spaCy_Entity_Ruler.html
 - I also became familiar with some organizational house-keeping tools to use for ease of engagement with the app for the user, such as the function "counter" which allowed the user to keep track of how many labels they added to analyze their text and the named entities that matched each!
+
+# Visualizations of the App in Use
