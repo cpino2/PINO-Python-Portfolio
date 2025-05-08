@@ -48,7 +48,7 @@ model.fit(X_features_inputs, y_target_output)#train the predictive model to cons
 expander = st.expander("See more about Random Forest Classifier:")
 expander.write('''
     Learn more about the Predictive Model using these links:
-[Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+[Random Forest Classifier,](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)\n
 [Distinguishing between data to train model and user input](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
 More on scikit-learn: https://scipy-lectures.org/packages/scikit-learn/index.html
 Algorithim Underlying Random Forest Classifier: https://www.e2enetworks.com/blog/random-forest-algorithm-in-machine-learning-a-guide
