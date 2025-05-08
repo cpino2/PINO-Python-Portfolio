@@ -21,6 +21,13 @@ Code Snippet I am Particularly Proud of:
 - I learned how to drop the rows in the dataset with null values to make the dataframe more concise, which made it easier to create visualizations later in my project! Below is a snippet of the code I wrote to drop the null values in the Type of Medal column:
 <img width="1064" alt="image" src="https://github.com/user-attachments/assets/9f83cf7c-ca1d-4fe4-9048-23966507a31d" />
 
+To deploy the app to Streamlit,
+- One must log into their Streamlit Account on the Streamlit Community Cloud that should also be linked to their Github Account
+- Next, one must click "Deploying? Free" on the top right corner of the screen
+- Click "Create App" in the top right corner of the screen
+- Click "Deploy a public app from Github"
+- One must select the repository that stores their code, select the folder that stores their code, and select the name of their project specific repository as well as naming a URL that will become the link to the deployed version of the app!
+
 ## App Features
 1. Each variable forms a column.
 2. Each observation forms a row.
