@@ -21,6 +21,8 @@ Local Installation Steps:
 -  Import all requried libraries in the notebook for the streamlit app to function properly and the code to run error-free:
 - Required libraries = streamlit, spaCy, pandas, scikit-learn, openpyxl
 <img width="309" alt="image" src="https://github.com/user-attachments/assets/2de95942-c557-4b95-bafe-6b271cf38d14" />
+
+- In terminal, must run "pip install openpyxl", "conda install openpyxl", "conda activate ner_app", "pip install openpyxl"
  
 Dependency list:
 - Create a requirements.txt file to install all necessary libraries all at once!
@@ -36,13 +38,12 @@ How to launch the app:
 
 # App Features
 User Inputs
-- ID
--   Way to distinguish patients from one another
+- ID (way to distinguish patients from one another
 - Age (numeric value in years)
-- Sex (male or female)
+- Sex (male = 1, female = 0)
 - Education Level (years of school completed, key provided in app to aid user)
-- APOE4 Status (yes, no, or unsure)
-- Family History
+- APOE4 Status (yes = 1, no = 0, unsure = prompted to make an educated guess)
+- Family History (yes = 1, no = 0, unsure = prompted to make an educated guess)
 
 Main functions
 - Predictive machine learning model was trained using an excel dataset created based on NIH data
@@ -50,7 +51,7 @@ Main functions
 - App requires users to input data so model can predict high or low risk of Alzheimer's disease onset by recognizing patterns it learned as a result of being trained with the initial dataset
 
 Outputs
-- App predicts high or low risk of disease onsest
+- App predicts high or low risk of disease onsest based on user inputs
 - 1 = High risk
 - 0 = Low risk
 - Strings converted to numeric values to ensure the predictive machine learning model functions error-free and runs smoothly
