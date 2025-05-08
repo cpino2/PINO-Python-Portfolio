@@ -39,10 +39,6 @@ st.write("Below is a tidy version of the dataset used to train this model in whi
 st.dataframe(df.head())#printing the tidy dataframe for the user to compare the differences between the tidy and untidy dataframe if they wish to do so, providing them the opportunity to understand the data that was used to train this model and make a prediction according to the responses the user provides
 st.write(" In the 'APOE4_status' Column, the 1 means the individual carries the APOE4 gene, while the 0 means the individual does not carry the gene. Additionally, responses in this column that had previously been 'Unsure' were filtered out to maintain consistency within the predictive model! In the 'Family_history' column, the 1 means this individual has family history of Alzheimer's disease, while the 0 means they do not. Lastly, in the 'Sex' Column, the 1 means the individual is a male while the 0 means the individual is a female.")#clarify what changed between untidy and tidy dataset
 
-#ASSIGNING INPUTS AND OUTPUTS
-st.title("It's time for you to input data now!")#adding a caption so the user knows it is now time for them to input their own personal information while engaging with the app
-X_features_inputs = df[["Age", "Sex", "Education_Level", "APOE4_status", "Family_history"]]#assigning the inputs that this model is going to use to make a prediction to "X" which represents the features
-y_target_output = df["Diagnosis"]#assigning the output that the model is going to eventually predict to "y" which represents the target (the goal of the predictive model is to predict the likelihood of the user getting diagnosed with Alzheimer's disease based on the information they provide when engaging with the app)
 
 #ABOUT RANDOM FOREST CLASSIFIER
 model = RandomForestClassifier()#creating a new instance of random forest classifier (machine learning algorithm that will combine predictions made in trained model to make accurate predictions when interpreting user inputs from the app)
@@ -55,6 +51,13 @@ expander.write('''
 [More on scikit-learn](https://scipy-lectures.org/packages/scikit-learn/index.html)\n
 [Algorithim Underlying Random Forest Classifier](https://www.e2enetworks.com/blog/random-forest-algorithm-in-machine-learning-a-guide)
 ''')
+
+
+#ASSIGNING INPUTS AND OUTPUTS
+st.title("It's time for you to input data now!")#adding a caption so the user knows it is now time for them to input their own personal information while engaging with the app
+X_features_inputs = df[["Age", "Sex", "Education_Level", "APOE4_status", "Family_history"]]#assigning the inputs that this model is going to use to make a prediction to "X" which represents the features
+y_target_output = df["Diagnosis"]#assigning the output that the model is going to eventually predict to "y" which represents the target (the goal of the predictive model is to predict the likelihood of the user getting diagnosed with Alzheimer's disease based on the information they provide when engaging with the app)
+
 
 #USER ENGAGEMENT/INPUT
 st.write("Type your age in the box below using numeric values!")#instructing user to type in their age
