@@ -1,0 +1,16 @@
+﻿ID,Age,Sex,Education_Level,APOE4_status,Family_history,Diagnosis
+1,79,Female,14,Yes,Yes,1
+2,83,Female,14,No,Yes,0
+3,65,Female,18,No,No,0
+4,75,Male,12,Yes,Yes,1
+5,67,Male,18,Unsure,No,0
+6,60,Male,18,No,Yes,0
+7,73,Female,8,Yes,Yes,1
+8,78,Male,12,Yes,No,0
+9,81,Female,18,Unsure,Unsure,0
+10,82,Female,12,Unsure,Unsure,1
+11,78,Male,16,Yes,Unsure,0
+12,69,Male,16,No,Yes,0
+13,82,Male,8,Yes,Yes,1
+14,74,Male,12,No,No,0
+15,66,Female,14,Unsure,No,0
