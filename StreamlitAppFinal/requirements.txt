@@ -8,3 +8,5 @@ streamlit==1.44.1
 #list this since using streamlit library
 scikit-learn 
 #need to list this in requirements.txt because of the random forest classifier imported to train the predictive model 
+openpyxl
+#need this for excel file to work when deploying streamlit app to community cloud 
