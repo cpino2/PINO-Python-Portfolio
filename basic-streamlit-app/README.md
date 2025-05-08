@@ -1,4 +1,4 @@
-# Overview
+# Project Overview
 - Repository stores all app-related content to facilitate its accessibility
 - Includes code underlying the app in "main.py", the data (penguins.csv) that was uploaded for the app's use, and this readme page explaining the app's purpose and how to run it
 

@@ -1,5 +1,4 @@
-# Tidy Data Project
-## Project Overview
+# Project Overview
 - Goal: Apply the principles of tidy data to clean, transform, and do an exploratory data analysis on a dataset about olympic medalists.
 ## Tidy Data Principles Overview
 1. Each variable forms a column.
