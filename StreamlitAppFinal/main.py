@@ -20,11 +20,11 @@ nlp = spacy.load("en_core_web_sm")#using this command to load the small English 
 
 #IMPORTING DATASET TO TRAIN MODEL
 st.title("Predicting Risk of Developing Alzheimer's Disease Based on Demographic & Cognitive Features")#displaying app title on its screen
-st.write("As the granddaughter of my wonderful, inspiring role model Abo who passed away from Alzheimer's disease at a young age, I am inspired to keep his legacy alive in all that I do. Hence, my project is inspired by him and the legacy he left behind. I created this app in hopes of making users more aware of their risk of developing Alzheimer's disease so that they can be proactive in taking the necessary precautions to mitigate their chances of the disease coming to fruition!")#providing user with a description about the app and its purpose to get them excited and intrigued
+st.write("As the granddaughter of my wonderful, inspiring role model Abo who passed away from Alzheimer's disease at a young age, I am inspired to keep his legacy alive in all that I do. Hence, my project is created to honor him and the legacy he left behind. I hope to increase awareness about the risks of developing Alzheimer's disease so users can be proactive in taking the necessary precautions to mitigate their chances of the disease coming to fruition!")#providing user with a description about the app and its purpose to get them excited and intrigued
 df = pd.read_csv("StreamlitAppFinal/alzheimersdataset.csv")#load sample dataset I created with alzheimer's data from my local device
 st.write("Below is a sample of the Alzheimer's dataset I created based on research previously conducted at the National Institute of Health which I used to train the predictive model underlying this app! ")#write a caption above the preview of the dataframe that will be shown in my app
 st.dataframe(df.head())#demonstrarte a sample of the dataframe I created on the actual app for the user to have a better understanding as to how the app predicts their risk of developing the disease/is able to see the cognitive and demographic factors the app takes into account when making this prediction
-st.write("The number in the 'Education_Level' column is indicative of the number of years of schooling that individual has completed. In the 'Diagnosis' column, the 1 means the individual is more likely to develop the disease based on the data provided, whereas the 0 means the individual is less likely to develop the disease.")#clarify significance of numerical values in the columns in the dataset shown
+st.write("The number in the 'Education_Level' column is indicative of the number of years of schooling that individual has completed. In the 'Diagnosis' column, the 1 means the individual is at higher risk of developing the disease based on the data provided, whereas the 0 means the individual is at a lower risk of developing the disease.")#clarify significance of numerical values in the columns in the dataset shown
 df = df[
     (df["APOE4_status"] != "Unsure") &
     (df["Family_history"] != "Unsure")
@@ -35,7 +35,7 @@ df["Sex"] = df["Sex"].map({"Male": 1, "Female": 0})#using label encoding to conv
 #at this point, all of the dataset is made up of numeric values which will allow the machine learning model to properly predict the user's likelihood of developing Alzheimer's disease based on the data they provide when engaging with the app
 
 #SHOWING TIDY DATASET
-st.write("Below is a tidy version of the dataset used to train this model!")#write a caption above the preview of the tidy dataframe that will be shown in my app
+st.write("Below is a tidy version of the dataset used to train this model in which strings were converted to numeric values and 'unsure' responses were filtered out to ensure the predictive model runs smoothly.")#write a caption above the preview of the tidy dataframe that will be shown in my app
 st.dataframe(df.head())#printing the tidy dataframe for the user to compare the differences between the tidy and untidy dataframe if they wish to do so, providing them the opportunity to understand the data that was used to train this model and make a prediction according to the responses the user provides
 st.write(" In the 'APOE4_status' Column, the 1 means the individual has the gene, while the 0 means the individual does not have the gene. Additionally, responses in this column that had previously been 'Unsure' were filtered out to maintain consistency within the predictive model! In the 'Family_history' column, the 1 means this individual has family history of Alzheimer's disease, while the 0 means they do not. Lastly, in the 'Sex' Column, the 1 means the individual is a male while the 0 means the individual is a female.")#clarify what changed between untidy and tidy dataset
 st.title("It's time for you to input data now!")#adding a caption so the user knows it is now time for them to input their own personal information while engaging with the app
@@ -47,7 +47,7 @@ model = RandomForestClassifier()#creating a new instance of random forest classi
 model.fit(X_features_inputs, y_target_output)#train the predictive model to consider the input features (sex, age, education level, APOE 4 status, family history) when predicting an output (high risk or low risk of developing Alzheimer's) so the model can learn patterns and be more accurate when making predictions based on user input
 expander = st.expander("Click here to learn more about Random Forest Classifier:")
 expander.write('''
-    Random Forest Classifier is a meta estimator that is used to train the predictive model underlying this app. Learn more using these links:\n
+    Random Forest Classifier is a meta estimator that is used to train the predictive model underlying this app. Learn more using the links below:\n
 [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)\n
 [Distinguishing between data to train model and user input](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)\n
 [More on scikit-learn](https://scipy-lectures.org/packages/scikit-learn/index.html)\n
