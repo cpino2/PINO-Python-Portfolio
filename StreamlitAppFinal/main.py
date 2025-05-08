@@ -1,5 +1,5 @@
 import streamlit as st #importing streamlit library
-import spacy#importing spaCy library
+import spacy #importing spaCy library
 import pandas as pd #import pandas library
 from sklearn.ensemble import RandomForestClassifier #import meta estimator to train the model based on the uploaded dataset so it can make accurate predictions based on user input
 from sklearn.model_selection import train_test_split #importing train_test_split function so the app can distinguish the training dataset (that which was imported to train the predictive model) from the test dataset (information inputted by the user when engaging with the app)
