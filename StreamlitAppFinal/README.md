@@ -1,6 +1,7 @@
 # Project Overview
 Purpose of App:
 - Increase Awareness of Lifestyle Changes that can be made to mitigate likelihood of developing Alzhemier's disease
+  
 Motivation Behind App:
 - Inspired by my amazing Grandfather Abo who passed away from Alzheimer's disease a few years ago
 # Setup & Run
