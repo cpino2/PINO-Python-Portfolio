@@ -53,3 +53,6 @@ If this were the text to have been analyzed, the output might look something lik
 - I also became familiar with some organizational house-keeping tools to use for ease of engagement with the app for the user, such as the function "counter" which allowed the user to keep track of how many labels they added to analyze their text and the named entities that matched each!
 
 # Visualizations of the App in Use
+- Below is an image of named entities assigned to labels the user selected to analyze in the text they inputted!
+<img width="557" alt="image" src="https://github.com/user-attachments/assets/70a1d9de-7ac5-4839-a684-a4edaac9754f" />
+
