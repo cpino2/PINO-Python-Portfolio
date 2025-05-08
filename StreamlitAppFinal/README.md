@@ -12,16 +12,22 @@ Motivation Behind App:
   
 # Setup & Run
 Local Installation Steps: 
--  Must import the necessary libraries
+-  Import all requried libraries in the notebook for the streamlit app to function properly and the code to run error-free:
+- Required libraries = streamlit, spaCy, pandas, scikit-learn, openpyxl
 <img width="309" alt="image" src="https://github.com/user-attachments/assets/2de95942-c557-4b95-bafe-6b271cf38d14" />
 - 
  
 Dependency list:
-- 
+- Create a requirements.txt file to install all necessary libraries all at once!
+- Here is how this dependency list should appear:
+<img width="739" alt="image" src="https://github.com/user-attachments/assets/bd7133ec-8ea1-4abb-95d0-534bb095d8b5" />
+
 How to launch the app: 
 - To run the app locally, ensure in the proper Python environment in Visual Studio Code (anaconda)
 - Next, locate the proper folder in the terminal:
 <img width="571" alt="image" src="https://github.com/user-attachments/assets/823eab64-dc16-417e-ac43-637d79ad33a9" />
+- Takes user to external browser to engage with app!
+
 
 Project Overview: What problem does the app solve?
 Setup & Run Instructions: Local installation steps, dependency list (with versions), and how to launch the app.
