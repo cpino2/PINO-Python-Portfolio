@@ -45,6 +45,12 @@ How to launch the app:
 - This will open an external browser for the user to engage with the app
 <img width="571" alt="image" src="https://github.com/user-attachments/assets/823eab64-dc16-417e-ac43-637d79ad33a9" />
 
+- To deploy the app to Streamlit, one must log into their Streamlit Account on the Streamlit Community Cloud that should also be linked to their Github Account
+- Next, one must click "Deploying? Free" on the top right corner of the screen
+- Click "Create App" in the top right corner of the screen
+- Click "Deploy a public app from Github"
+- One must select the repository that stores their code, select the folder that stores their code, and select the name of their project specific repository as well as naming a URL that will become the link to the deployed version of the app!
+
 # Link to Deployed Version of the App on Streamlit Cloud
 https://pinoalzheimersriskpredictorappfinal.streamlit.app/
 
