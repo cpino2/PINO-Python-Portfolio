@@ -1,12 +1,4 @@
-#requirements.txt file created that consists of all package dependencies the app I created neecs to run all listed here...this is necessary so streamlit can recreate the python environment used when the app was coded on VScode once the app gets deployed in streamlit community cloud
 pandas==2.2.3
-#import pandas since using pandas library
+scikit_learn==1.6.1
 spacy==3.8.5
-#import spacy since using spacy library
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
 streamlit==1.44.1
-#list this since using streamlit library
-scikit-learn==1.2.2
-#need to list this in requirements.txt because of the random forest classifier imported to train the predictive model 
-openpyxl==3.1.2
-#need this for excel file to work when deploying streamlit app to community cloud 
